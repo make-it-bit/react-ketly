@@ -1,0 +1,27 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-arrow,
+#right-arrow {
+  height: 30px;
+  width: 30px;
+  margin: 50px;
+  box-shadow: -3.5px 3.5px 0 black;
+}
+
+#left-arrow {
+  transform: rotate(45deg);
+}
+
+#right-arrow {
+  transform: rotate(-135deg);
+}
+
+img {
+  height: 350px;
+  width: 450px;
+  border: solid 0.5px #000000;
+}
