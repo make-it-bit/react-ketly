@@ -1,0 +1,80 @@
+#root {
+  width: 50%;
+  text-align: center;
+}
+
+.list-container {
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: cadetblue;
+  padding: 25px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input {
+  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  width: 30%;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #b4eff2;
+  padding: 10px;
+  box-shadow: #00000059 0px 5px 15px;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+.list-item:first-child {
+  margin-top: 20px;
+}
+
+p {
+  width: 100%;
+  text-align: left;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  width: 100%;
+  text-align: right;
+  color: red;
+  background-color: transparent;
+  padding: 0;
+  margin: 5px;
+  box-shadow: none;
+  transition: 0.2s all;
+}
+
+.delete-button:hover {
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+#purchased {
+  text-decoration: line-through;
+}

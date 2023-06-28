@@ -1,0 +1,30 @@
+#root {
+  width: 50%;
+  text-align: center;
+}
+
+.quote-container {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: cadetblue;
+  padding: 15px;
+}
+
+button {
+  height: 45px;
+  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  background-color: #b4eff2;
+  margin-bottom: 20px;
+  box-shadow: #00000059 0px 5px 15px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+button:active {
+  transform: scale(0.95);
+}

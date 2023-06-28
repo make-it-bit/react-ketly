@@ -1,3 +1,7 @@
+#root {
+  text-align: center;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -11,6 +15,7 @@
   margin: 50px;
   box-shadow: -3.5px 3.5px 0 black;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 #left-arrow {
@@ -21,8 +26,16 @@
   transform: rotate(-135deg);
 }
 
+#left-arrow:hover {
+  transform: rotate(45deg) scale(1.5);
+}
+
+#right-arrow:hover {
+  transform: rotate(-135deg) scale(1.5);
+}
+
 img {
-  height: 350px;
-  width: 450px;
+  height: 450px;
+  width: 550px;
   border: solid 0.5px #000000;
 }

@@ -1,0 +1,40 @@
+#root {
+  width: 40%;
+  text-align: center;
+  margin: 15px;
+}
+
+.accordion-container {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #5f9ea0;
+  padding: 15px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(180, 239, 242);
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+h3 {
+  margin: 15px;
+}
