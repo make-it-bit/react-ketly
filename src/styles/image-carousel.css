@@ -1,21 +1,19 @@
-#root {
-  text-align: center;
-}
-
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 55%;
 }
 
 #left-arrow,
 #right-arrow {
   height: 30px;
   width: 30px;
+  padding: 20px;
   margin: 50px;
   box-shadow: -3.5px 3.5px 0 black;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 #left-arrow {
@@ -34,8 +32,8 @@
   transform: rotate(-135deg) scale(1.5);
 }
 
-img {
+.img-carousel {
   height: 450px;
-  width: 550px;
+  width: 100%;
   border: solid 0.5px #000000;
 }

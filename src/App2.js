@@ -1,5 +1,6 @@
 import React from 'react';
 import FAQAccordion from './components/FAQAccordion';
+import './styles/faq-accordion.css';
 
 const questions = [
   {

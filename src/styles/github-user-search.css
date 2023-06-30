@@ -1,0 +1,52 @@
+#h1-github {
+  margin-top: 30px;
+}
+
+.search-container {
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #97cdcfc4;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.search-container form input {
+  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  width: 30%;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #b4eff2;
+  padding: 10px;
+  box-shadow: #00000059 0px 5px 15px;
+  cursor: pointer;
+}
+
+.results h2 {
+  margin: 30px 0 0 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.img-github {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+a {
+  font-size: larger;
+}

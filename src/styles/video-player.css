@@ -1,0 +1,38 @@
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #97cdcfc4;
+  padding: 25px;
+  margin: 0 20px;
+}
+
+.video-container form {
+  display: flex;
+  align-items: center;
+}
+
+.video-container form input {
+  height: 35px;
+  margin: 0 5px 0 20px;
+  cursor: pointer;
+}
+
+.video-container form input:first-child {
+  margin-left: 0;
+}
+
+.video-container form label {
+  font-size: 25px;
+}
+
+.video-content {
+  width: 550px;
+}
+
+video {
+  width: 100%;
+  margin-top: 20px;
+}

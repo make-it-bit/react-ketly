@@ -1,0 +1,29 @@
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #97cdcfc4;
+  padding: 25px;
+}
+
+.calculator-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calculator-container form label {
+  font-size: larger;
+  text-align: left;
+}
+
+.calculator-container form input {
+  cursor: pointer;
+}
+
+.calculator-container p {
+  font-size: x-large;
+  margin: 0;
+}

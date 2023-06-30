@@ -1,18 +1,8 @@
-#root {
-  width: 40%;
-  text-align: center;
-  margin: 15px;
-}
-
 .accordion-container {
-  width: 100%;
+  width: 65%;
   border-radius: 5px;
-  background-color: #5f9ea0;
+  background-color: #97cdcfc4;
   padding: 15px;
-}
-
-h2 {
-  margin-top: 0;
 }
 
 .questions {
@@ -29,12 +19,21 @@ h2 {
   height: 60px;
   width: 100%;
   border-radius: 5px;
-  background-color: rgb(180, 239, 242);
+  background-color: #b4eff2;
   margin: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: #00000059 0px 5px 15px;
   cursor: pointer;
 }
 
-h3 {
+.question-title h3 {
   margin: 15px;
+}
+
+.question-content {
+  margin: 0 5px 0 5px;
+}
+
+.question-content p {
+  font-size: larger;
+  text-align: justify;
 }

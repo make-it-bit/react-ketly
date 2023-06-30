@@ -3,6 +3,7 @@ import ShoppingList from './components/ShoppingList';
 
 const App4 = () => {
   const [items, setItems] = useState([]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const newItems = [...items, event.target.item.value];
@@ -10,11 +11,13 @@ const App4 = () => {
     event.target.reset();
   };
   const handleRemove = (itemToRemove) => {
+    console.log('here');
     const newItems = items.filter((item) => {
       return item !== itemToRemove;
     });
     setItems(newItems);
   };
+
   return (
     <>
       <h1>Project 4 - Shopping List!</h1>
@@ -22,13 +25,13 @@ const App4 = () => {
         <h2>Items to Buy</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" name="item" placeholder="Add a New Item" required></input>
-          <button type="submit">Add</button>
+          <button type="submit">ADD</button>
         </form>
         <div className="list">
           {items.map((item) => (
             <div className="list-item">
-              <ShoppingList items={items} item={item} />
-              <button type="button" className="delete-button" onClick={() => handleRemove(item)}>
+              <ShoppingList item={item} />
+              <button type="button" onClick={() => handleRemove(item)}>
                 X
               </button>
             </div>

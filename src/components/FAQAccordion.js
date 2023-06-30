@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../styles/faq-accordion.css';
 
 const FAQAccordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div className="question">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/shopping-list.css';
 
-const ShoppingList = ({ items, item }) => {
+const ShoppingList = ({ item }) => {
   const [isPurchased, setIsPurchased] = useState(false);
 
   return (
