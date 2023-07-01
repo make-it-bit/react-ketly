@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #5f9ea0;
 }
 
 #root {

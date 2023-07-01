@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/shopping-list.css';
 
-const ShoppingList = ({ item }) => {
+const ShoppingListItem = ({ item }) => {
   const [isPurchased, setIsPurchased] = useState(false);
 
   return (
@@ -13,4 +12,4 @@ const ShoppingList = ({ item }) => {
   );
 };
 
-export default ShoppingList;
+export default ShoppingListItem;

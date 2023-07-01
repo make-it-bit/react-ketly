@@ -1,5 +1,5 @@
 import React, { /*useEffect,*/ useState } from 'react';
-import './styles/quote-generator.css';
+import './styles/app3.css';
 
 const App3 = () => {
   const [quote, setQuote] = useState();
@@ -25,7 +25,7 @@ const App3 = () => {
         <h2>Kanye once said:</h2>
         <h3>"{quote}"</h3>
         <button type="button" onClick={handleClick}>
-          GENERATE AGAIN
+          GENERATE A QUOTE
         </button>
       </div>
     </>

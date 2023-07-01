@@ -1,6 +1,6 @@
 import React from 'react';
-import FAQAccordion from './components/FAQAccordion';
-import './styles/faq-accordion.css';
+import FrequentlyAskedQuestion from './components/FrequentlyAskedQuestion';
+import './styles/app2.css';
 
 const questions = [
   {
@@ -42,8 +42,8 @@ const App2 = () => {
       <div className="accordion-container">
         <h2>Frequently Asked Questions</h2>
         <div className="questions">
-          {questions.map(({ title, content }) => (
-            <FAQAccordion title={title} content={content} />
+          {questions.map(({ title, content }, index) => (
+            <FrequentlyAskedQuestion key={`question-${index}`} title={title} content={content} />
           ))}
         </div>
       </div>

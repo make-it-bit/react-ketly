@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ShoppingList from './components/ShoppingList';
+import ShoppingListItem from './components/ShoppingListItem';
+import './styles/app4.css';
 
 const App4 = () => {
   const [items, setItems] = useState([]);
@@ -11,7 +12,6 @@ const App4 = () => {
     event.target.reset();
   };
   const handleRemove = (itemToRemove) => {
-    console.log('here');
     const newItems = items.filter((item) => {
       return item !== itemToRemove;
     });
@@ -28,9 +28,9 @@ const App4 = () => {
           <button type="submit">ADD</button>
         </form>
         <div className="list">
-          {items.map((item) => (
-            <div className="list-item">
-              <ShoppingList item={item} />
+          {items.map((item, index) => (
+            <div key={`list-item-${index}`} className="list-item">
+              <ShoppingListItem item={item} />
               <button type="button" onClick={() => handleRemove(item)}>
                 X
               </button>

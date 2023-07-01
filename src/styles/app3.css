@@ -6,6 +6,11 @@
   padding: 15px;
 }
 
+.quote-container h3 {
+  font-size: larger;
+  font-weight: lighter;
+}
+
 .quote-container button {
   height: auto;
   width: auto;
@@ -20,6 +25,6 @@
   transition: 0.2s all;
 }
 
-button:active {
+.quote-container button:active {
   transform: scale(0.95);
 }

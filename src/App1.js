@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/image-carousel.css';
+import './styles/app1.css';
 
 const images = [
   './images/pastel-green.jpg',
@@ -11,28 +11,27 @@ const images = [
 
 const App1 = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const quantityOfImages = images.length;
 
   const nextImage = () => {
-    setCurrentImageIndex(currentImageIndex === quantityOfImages - 1 ? 0 : currentImageIndex + 1);
+    setCurrentImageIndex(currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1);
   };
   const previousImage = () => {
-    setCurrentImageIndex(currentImageIndex === 0 ? quantityOfImages - 1 : currentImageIndex - 1);
+    setCurrentImageIndex(currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1);
   };
 
   return (
     <>
       <h1>Project 1 - Image Carousel!</h1>
       <div className="image-container">
-        <div id="left-arrow" onClick={previousImage} />
+        <div id="left-arrow" className="arrow" onClick={previousImage} />
         {images.map((image, index) => {
           return (
-            <div className="slide">
-              {index === currentImageIndex && <img src={image} key={index} className="img-carousel" alt="" />}
+            <div key={`image-${index}`} className="image">
+              {index === currentImageIndex && <img className="img-carousel" src={image} alt="pastel-background" />}
             </div>
           );
         })}
-        <div id="right-arrow" onClick={nextImage} />
+        <div id="right-arrow" className="arrow" onClick={nextImage} />
       </div>
     </>
   );

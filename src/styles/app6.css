@@ -9,30 +9,34 @@
   margin: 0 20px;
 }
 
+.video-container p {
+  margin: 0 0 10px 0;
+}
+
 .video-container form {
   display: flex;
   align-items: center;
 }
 
-.video-container form input {
-  height: 35px;
-  margin: 0 5px 0 20px;
-  cursor: pointer;
+.video-option {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
-.video-container form input:first-child {
+.video-option:first-child {
   margin-left: 0;
 }
 
-.video-container form label {
+.video-option input {
+  cursor: pointer;
+}
+
+.video-option label {
   font-size: 25px;
 }
 
-.video-content {
-  width: 550px;
-}
-
 video {
-  width: 100%;
+  max-width: 650px;
   margin-top: 20px;
 }

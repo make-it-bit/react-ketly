@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/github-user-search.css';
+import './styles/app5.css';
 
 const App5 = () => {
   const [query, setQuery] = useState('');
@@ -8,6 +8,7 @@ const App5 = () => {
 
   const handleChange = (event) => {
     setQuery(event.target.value);
+    setIsDisplayed(false);
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -37,7 +38,7 @@ const App5 = () => {
             <h2>Search Results</h2>
             {results.map((user, index) => (
               <div key={`user-${index}`} className="user">
-                <img src={user.avatar_url} className="img-github" alt={`${user.login}-avatar`}></img>
+                <img className="img-github" src={user.avatar_url} alt={`${user.login}-avatar`}></img>
                 <a href={user.html_url} target="_blank" rel="noreferrer">
                   {user.login}
                 </a>

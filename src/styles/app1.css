@@ -5,8 +5,7 @@
   max-width: 55%;
 }
 
-#left-arrow,
-#right-arrow {
+.arrow {
   height: 30px;
   width: 30px;
   padding: 20px;
@@ -20,12 +19,12 @@
   transform: rotate(45deg);
 }
 
-#right-arrow {
-  transform: rotate(-135deg);
-}
-
 #left-arrow:hover {
   transform: rotate(45deg) scale(1.5);
+}
+
+#right-arrow {
+  transform: rotate(-135deg);
 }
 
 #right-arrow:hover {

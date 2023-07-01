@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FAQAccordion = ({ title, content }) => {
+const FrequentlyAskedQuestion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,4 +19,4 @@ const FAQAccordion = ({ title, content }) => {
   );
 };
 
-export default FAQAccordion;
+export default FrequentlyAskedQuestion;

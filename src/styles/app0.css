@@ -1,7 +1,3 @@
-body {
-  background-color: #5f9ea0;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -21,12 +17,13 @@ body {
   overflow: auto;
 }
 
-.container a {
+.project a {
   text-decoration: none;
+  font-size: large;
   font-weight: bold;
   color: #000000;
 }
 
-a:hover {
-  text-shadow: 3px 3px #ffffff;
+.project a:hover {
+  text-shadow: 3px 3px 3px #ffffff;
 }
