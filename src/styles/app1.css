@@ -10,7 +10,7 @@
   width: 30px;
   padding: 20px;
   margin: 50px;
-  box-shadow: -3.5px 3.5px 0 black;
+  box-shadow: -3.5px 3.5px 0 #000000;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
